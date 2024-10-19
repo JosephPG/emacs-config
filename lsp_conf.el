@@ -18,6 +18,15 @@
     (setq lsp-ui-sideline-enable nil)
     (setq lsp-headerline-breadcrumb-enable nil)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;; Servers ;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package lsp-pyright
+  :straight t
+  :ensure t
+  :custom (lsp-pyright-langserver-command "pyright")
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp-deferred))))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;; Utils ;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package company-mode
   :straight t
