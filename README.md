@@ -34,3 +34,12 @@
 
 ;;; Package: "treemacs"
 (require 'tree_conf)
+
+;;; LSP config
+(require 'lsp_conf)
+
+;;; Python config
+(require 'python_conf)
+
+;;; Reformatter config
+(require 'formatall_config)
