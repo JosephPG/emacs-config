@@ -50,5 +50,19 @@
     :config
     (setq flycheck-pos-tip-timeout 30)))
 
+(use-package tree-sitter
+  :straight t
+  :ensure t
+  :init (global-tree-sitter-mode)
+  :config
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
+  
+  ;; Besides need install tree-sitter-python in the system, in this case i installed with yay -S tree-sitter-python
+  ;; So need install in the system for each new language
+
+  (use-package tree-sitter-langs
+    :straight t
+    :ensure t))
+
 
 (provide 'lsp_conf)

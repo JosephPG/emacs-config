@@ -10,7 +10,7 @@
   :ensure t
   :bind*
   ("M-n p n" . python-pytest-dispatch)
-  ("M-n p f" . python-pytest-function)
+  ("M-n p f" . python-pytest-run-def-at-point-treesit)
   ("M-n p r" . python-pytest-repeat))
 
 (use-package importmagic
