@@ -43,3 +43,6 @@
 
 ;;; Reformatter config
 (require 'formatall_config)
+
+;;; Custom variables
+(require 'custom_variables)
