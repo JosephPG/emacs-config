@@ -46,3 +46,6 @@
 
 ;;; Custom variables
 (require 'custom_variables)
+
+;;; Mayor conf
+(require 'major_conf)
