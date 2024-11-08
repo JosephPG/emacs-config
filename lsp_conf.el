@@ -1,6 +1,6 @@
 (use-package lsp-mode
   :straight t
-  :hook ((python-mode js-mode typescript-mode) . lsp-deferred)
+  :hook ((python-mode js-mode typescript-ts-mode) . lsp-deferred)
   :commands lsp
   :custom
   (lsp-diagnostics-provider :none)
