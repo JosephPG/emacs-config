@@ -1,54 +1,15 @@
-;;; Charge path own config to load-path
-;;; Code:
-(add-to-list 'load-path (expand-file-name "own" user-emacs-directory))
+# Personal Emacs setup
 
-;;; Straight
-(require 'straight_conf)
+## Features
 
-;;; Emacs no [menu|scroll|tool] - bar
-;;; See Numbers col
-;;; Package: "good-scroll" "atom-one-dark-theme" "all-the-icons"
-;;; Fonts
-(require 'visual_conf)
+Support for python and js (typescript, node).
 
-;;; Package: "exec-path-from-shell" "winum"
-(require 'conf)
+## Packages
 
-;;; Keys global config
-(require 'keys_conf)
+- Package Manager: [Straight.el](https://github.com/radian-software/straight.el) 
+- Theme and styles: [good-scroll.el](https://github.com/io12/good-scroll.el), [atom-one-dark-theme](https://github.com/jonathanchu/atom-one-dark-theme), [all-the-icons.el](https://github.com/domtronn/all-the-icons.el)
+- Configs: [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell), [winum](https://github.com/deb0ch/emacs-winum)
 
-;;; Package: "ivy" "counsel" "swiper" "projectile"
-(require 'core_conf)
+## Screenshoot
 
-;;; Package: "dashboard"
-(require 'dashboard_conf)
-
-;;; Package: "which-key" "doom-modeline"
-(require 'modeline_conf)
-
-;;; Package: "yaml-mode" "magit"
-(require 'modes_conf)
-
-;;; Package: "show-paren-mode" "hs-hide-block"
-(require 'lang_conf)
-
-;;; Package: "treemacs"
-(require 'tree_conf)
-
-;;; LSP config
-(require 'lsp_conf)
-
-;;; Python config
-(require 'python_conf)
-
-;;; Reformatter config
-(require 'formatall_config)
-
-;;; Custom variables
-(require 'custom_variables)
-
-;;; Mayor conf
-(require 'major_conf)
-
-;;; js - node - ts mode
-(require 'js_conf)
+![alt text](https://raw.githubusercontent.com/JosephPG/emacs-config/refs/heads/main/images/sc.png)
