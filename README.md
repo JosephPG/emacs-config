@@ -49,3 +49,6 @@
 
 ;;; Mayor conf
 (require 'major_conf)
+
+;;; js - node - ts mode
+(require 'js_conf)
