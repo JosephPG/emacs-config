@@ -14,6 +14,9 @@
 	      (prettier))))
      (eval setq format-all-formatters
 	   '(("TypeScript"
+	      (prettier))))
+     (eval setq format-all-formatters
+	   '(("TSX"
 	      (prettier)))))))
 
 
